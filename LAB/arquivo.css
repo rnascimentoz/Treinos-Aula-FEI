@@ -1,0 +1,30 @@
+body{background: linear-gradient(orange, rgb(207, 71, 71), yellow,rgb(207, 71, 71)); min-height: 100vh;}
+
+a:hover{color: aqua;}
+
+.bola{
+    color:whitesmoke;
+    font-size: 18pt;}
+
+.rafa{
+    position: relative;
+    top: 50px;
+    text-align: center;}
+
+.gst{
+    color:rgb(36, 35, 34);
+    margin-left: 150px;}
+.white{color: white;}
+.rede{
+    background-image: url(insta.png);
+    height: 100px;
+    width: auto;
+    background-size: contain;
+    z-index: 3;
+}
+.pj{
+    margin-left: 875px;
+    color: rgb(63, 45, 126);
+    position: relative;
+    top:50px;
+}
