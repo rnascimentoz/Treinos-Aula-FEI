@@ -1,0 +1,13 @@
+.menu{
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    justify-content: space-around;
+    padding-right: 10px ;
+    margin-right: 1750px;
+    margin-left: 80px;
+    width: 45px;
+    flex-direction: row;
+    margin-top: 15px;
+}
