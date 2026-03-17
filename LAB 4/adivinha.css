@@ -1,0 +1,9 @@
+body{background-color:cornflowerblue;}
+.input{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: azure;
+    flex-flow: wrap column;
+   margin-top: 20px;
+}
