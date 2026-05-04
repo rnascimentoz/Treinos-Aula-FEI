@@ -1,0 +1,10 @@
+#divcanvas{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+#canvas{
+    background-color: rgba(65, 255, 166, 0.603);
+}
