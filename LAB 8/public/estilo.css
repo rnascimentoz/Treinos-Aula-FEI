@@ -1,0 +1,32 @@
+Body{
+background-color: lightskyblue;
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-top: 40px;
+}
+
+.login{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.all div{
+    margin-top: 60px;
+}
+
+.all h3{
+    display: flex;
+    
+    justify-content: center;
+}
