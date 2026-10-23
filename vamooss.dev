@@ -1,60 +1,49 @@
-[Project]
-FileName=vamooss.dev
-Name=vamooss
-UnitCount=1
-Type=1
-Ver=1
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=0
-Icon=
-ExeOutput=
-ObjectOutput=
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-Folders=
-CommandLine=
-UseCustomMakefile=0
-CustomMakefile=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=00000000000000000000000
+#include <stdio.h>
+#include <stdlib.h>
 
-[Unit1]
-FileName=vams.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
 
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
+int main( )
+{
+	int *ptr1, *ptr2, *ptr3;
 
+	ptr1 = malloc( sizeof(int)); //Size of é para ter um tamanho predefinido que o ponteiro ocupa normalmente. Caso eu queira mexer, mexo dentro do paranteses
+	ptr2 = malloc( sizeof(int));
+	ptr3 = malloc( sizeof(int));
+	
+	*ptr1 = 1;
+	*ptr2 = 20;
+	*ptr3 = 300;
+	
+	printf("\n------------------------------------------------------------------------------------------------------------------\n");
+	
+	printf("\nO ponteiro ptr1 esta no endereco:  %p\n", &ptr1);
+	printf("O ponteiro 1 ocupa %d bite(s)\n", sizeof(int));
+	printf("O endereco armazenado no ponteiro 1 eh:  %p\n", ptr1);
+	printf("O conteudo do endereco armazenado no ponteiro 1 eh:  %d\n\n", *ptr1);
+	
+	printf("O ponteiro ptr2 esta no endereco:  %p\n", &ptr2);
+	printf("O ponteiro 2 ocupa %d bite(s)\n", sizeof(int));
+	printf("O endereco armazenado no ponteiro 2 eh:  %p\n", ptr2);
+	printf("O conteudo do endereco armazenado no ponteiro 2 eh:  %d\n\n", *ptr2);
+	
+	printf("O ponteiro ptr3 esta no endereco:  %p\n", &ptr3);
+	printf("O ponteiro 3 ocupa %d bite(s)\n", sizeof(int));
+	printf("O endereco armazenado no ponteiro 3 eh:  %p\n", ptr3);
+	printf("O conteudo do endereco armazenado no ponteiro 3 eh: %d\n\n", *ptr3);
+	printf("\n------------------------------------------------------------------------------------------------------------------\n");
+	
+	free(ptr1);
+	free(ptr2);
+	free(ptr3);
+
+	printf("\n\n       					Depois do free:\n");
+
+    printf("\n			O ponteiro ptr1 esta no endereco:  %p\n", &ptr1);
+	printf("			O ponteiro 1 ocupa %d bite(s)\n", sizeof(int));
+	printf("			O endereco armazenado no ponteiro 1 eh:  %p\n", ptr1);
+	printf("			O conteudo do endereco armazenado no ponteiro 1 eh:  %d\n\n", *ptr1);
+
+
+	system("pause");
+	return 0;
+}
